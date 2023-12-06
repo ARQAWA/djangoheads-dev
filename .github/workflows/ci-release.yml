@@ -19,6 +19,7 @@ jobs:
 
             -   name: Release
                 uses: cycjimmy/semantic-release-action@v4
+                id: semantic_release_step
                 with:
                     semantic_version: 22.0.9
                     extra_plugins: |
@@ -27,3 +28,16 @@ jobs:
                         conventional-changelog-conventionalcommits@7.0.2
                 env:
                     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            -   name: Update pyproject.toml
+                run: |
+                    NEW_VERSION=${{ steps.semantic_release_step.outputs.new_release_version }}
+                    sed -i "s/^version = .*/version = \"$NEW_VERSION\"/" pyproject.toml
+
+            -   name: Push changes
+                run: |
+                    git config --global user.name 'GitHub Action'
+                    git config --global user.email 'action@github.com'
+                    git add pyproject.toml
+                    git commit -m "chore: update version to $NEW_VERSION"
+                    git push
