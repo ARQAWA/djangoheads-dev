@@ -1,7 +1,7 @@
 {
 //    "branches": "main",
     "branches": "stage",
-    "repositoryUrl": "https://github.com/djangoheads/djangoheads",
+    "repositoryUrl": "https://github.com/ARQAWA/djangoheads-dev",
     "ci": false,
     "plugins": [
         [
