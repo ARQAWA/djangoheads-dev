@@ -1,8 +1,10 @@
-.git
 .idea
+.github
+.gitignore
+.editorconfig
+.releaserc.json
 .mypy_cache
 .ruff_cache
 .tox
 __pycache__
 dist
-node_modules

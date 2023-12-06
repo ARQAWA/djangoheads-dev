@@ -3,11 +3,12 @@ name: ci-release
 on:
     push:
         branches:
-            - main
+            - stage
 
 jobs:
     job-release:
         name: CI Release
+        if: github.repository_owner == 'ARQAWA'
         runs-on: ubuntu-latest
         steps:
             -   name: Checkout

@@ -4,4 +4,3 @@
 .tox
 __pycache__
 dist
-node_modules

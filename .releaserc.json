@@ -1,5 +1,6 @@
 {
-    "branches": "main",
+//    "branches": "main",
+    "branches": "stage",
     "repositoryUrl": "https://github.com/djangoheads/djangoheads",
     "ci": false,
     "plugins": [
