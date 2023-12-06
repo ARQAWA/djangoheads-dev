@@ -1,5 +1,4 @@
 {
-//    "branches": "main",
     "branches": "stage",
     "repositoryUrl": "https://github.com/ARQAWA/djangoheads-dev",
     "ci": false,
