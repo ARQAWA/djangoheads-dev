@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1](https://github.com/ARQAWA/djangoheads-dev/compare/v1.1.0...v1.1.1) (2024-01-15)
+
+
+### Bug Fixes
+
+* **init:** initdjango ([67baa6c](https://github.com/ARQAWA/djangoheads-dev/commit/67baa6c81d93310da629bdeeba774cfc459f47cb))
+* removed env test marker ([a51f637](https://github.com/ARQAWA/djangoheads-dev/commit/a51f637972733aaa4a2f63e476c41b63eaa659b4))
+
 ## [1.1.1](https://github.com/djangoheads/djangoheads/compare/v1.1.0...v1.1.1) (2024-01-15)
 
 
